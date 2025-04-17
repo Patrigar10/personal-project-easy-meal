@@ -1,0 +1,56 @@
+@use "../core/variables" as vars;
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: vars.$main-font;
+
+
+    &_logo {
+        width: 40vw;
+
+        @media (min-width: 768px) {
+            width: 25vw;
+        }
+
+
+        &_src {
+            width: 100%;
+        }
+    }
+
+
+    &_text {
+        color: vars.$main-color;
+        font-weight: bold;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+
+
+    }
+
+    &_link {
+        background-color: vars.$main-color;
+        color: white;
+        border-radius: 15px;
+        padding: 10px;
+
+        &:hover {
+            background-color: #ff954a69;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+    }
+}

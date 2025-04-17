@@ -1,0 +1,154 @@
+@use "../core/variables" as vars;
+
+html {
+    font-family: vars.$main-font;
+    background-color: vars.$background-color;
+}
+
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+
+    &_list {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        padding-right: 35px;
+        font-size: 14px;
+        color: vars.$main-color;
+    }
+
+    &_img {
+        width: 75px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    &_img img {
+        width: 100%;
+    }
+
+}
+
+.main {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+
+}
+
+.aside {
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    width: 330px;
+
+
+    &_title {
+        background-color: vars.$main-color;
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 15px;
+    }
+}
+
+.selected {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    &_img {
+        width: 80px;
+        height: 80px;
+
+
+        &_src {
+            width: 100%;
+        }
+    }
+
+    &_title {
+        font-size: 12px;
+    }
+
+
+}
+
+
+.search {
+
+    &_days {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: vars.$main-color;
+
+        &_unselected {
+            padding: 8px;
+        }
+
+        &_selected {
+            background-color: #fcad76;
+            color: white;
+            padding: 8px;
+            border-radius: 10px;
+        }
+
+    }
+
+    &_form {
+        margin: 20px;
+
+        &_select {
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px;
+    }
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+
+    &_img {
+        width: 150px;
+        height: 150px;
+
+
+        &_src {
+            width: 100%;
+        }
+    }
+
+    &_title {
+        font-size: 12px;
+    }
+
+
+}
+
+.check {
+    color: white;
+}
