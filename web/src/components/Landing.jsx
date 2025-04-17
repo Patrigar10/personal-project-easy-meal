@@ -1,6 +1,6 @@
 import landingLogo from "../images/landing-logo-transparent.png";
-import { Link } from "react-router-dom";
 import foodBg from "../images/landing-bgnd.jpg";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   const backgroundStyle = {

@@ -4,6 +4,9 @@ import salad from "../images/salad.webp";
 import lentejas from "../images/lentejas.jpeg";
 import { Link } from "react-router-dom";
 import MealCard from "./MealCard";
+import MealList from "./MealList";
+import { Route, Routes } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 const Start = ({ meals }) => {
   return (
@@ -102,20 +105,19 @@ const Start = ({ meals }) => {
             <li className="search_days_selected">Jueves</li>
             <li className="search_days_unselected">Viernes</li>
           </ul>
-          <form className="search_form" action="">
-            <select className="search_form_select" name="options" id="options">
-              <option value="search">Buscar por...</option>
-              <option value="menu">Menús completos</option>
-              <option value="ingredient">Tipo de ingredientes</option>
-              <option value="favourites">Favoritos</option>
-            </select>
-          </form>
+          <ul className="search_options">
+            <li>
+              <Link to={"/start/menus"}>Menús completos</Link>
+            </li>
 
-          <ul className="search_list">
-            {meals.map((meal) => {
-              return <MealCard meal={meal} />;
-            })}
+            <li>
+              <Link to={"/start/ingredients"}>Ingredientes</Link>
+            </li>
+            <li>
+              <Link to={"/start/favorites"}>Favoritos</Link>
+            </li>
           </ul>
+          <Outlet />
         </section>
       </main>
     </>
