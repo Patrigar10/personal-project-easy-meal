@@ -8,9 +8,9 @@ Easy Meal es una aplicación web en desarrollo que busca facilitar la planificac
 
 🧾 Gestión de menús:
 
-Seleccionar menús desde una base de datos.
+- Seleccionar menús desde una base de datos.
 
-O construir un menú personalizado eligiendo platos e ingredientes.
+- O construir un menú personalizado eligiendo platos e ingredientes.
 
 🗂️ Listas de ingredientes: Los ingredientes se agrupan por categoría (por ejemplo, vegetales, lácteos, proteínas, etc.) para facilitar la compra.
 
