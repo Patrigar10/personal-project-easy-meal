@@ -69,7 +69,7 @@ npm run dev
 Frontend:
 
 ```
-cs web
+cd web
 npm run dev
 ```
 
